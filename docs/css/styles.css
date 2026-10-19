@@ -72,7 +72,8 @@ html {
 }
 
 body {
-    background: #272343; /* .first-color */ 
+    padding-top: 40px; /*this was added so the navigation bar wouldnt take part of the top of the first part */
+    background: #ffffff; /* .second-color * changed from dark blue to white */
     margin: 0 auto; /*3d change, margin: 0; */
     box-sizing: border-box; 
     /*padding: 0 20px; changed it to main section so the color sections would go side to side of the body.*/
@@ -91,14 +92,36 @@ body {
     margin-bottom: 5px;
 }
 
-.nav a {
-    color: red; /* .first-color */
+.nav a { 
     text-decoration: none;
     display: inline-block;
 }
 
 .navigationDisp {
+    top: 0; 
+    margin: 0 auto 5px; 
+    padding: 10px 60px;
+    display: flex;
+    justify-content: space-around;
     text-align: center;
+    background: #ffffff; /* .second-color, it wasnt getting applied when used on nav by itself. */ 
+    position:fixed; /*so it stays on top of the page when scrolling down */
+    width: 100%; /*so it takes the whole allowed width, as making it fixed made it  no longer follow the previous setting */
+}
+
+.nav-content {
+    max-width: 950px; 
+    margin: 0 auto 5px; 
+    padding: 10px 60px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    width: 100%;
+}
+
+.navigationDisp a:link, .navigationDisp a:visited, .navigationDisp a:hover, .navigationDisp a:active { /*added all these in order to keep the navigation the same color regardless of the state of the link. */
+    color: red; /*changes text color to red*/
+    text-decoration: none; /* to get rid of the underline */
 }
 
 
