@@ -64,6 +64,7 @@ html {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    scroll-padding-top: 70px; /*added this otherwise cliking the navigation links makes the fixed navigation bar itself to block the subtitle */
 
     box-sizing: border-box; /* 5a */
 } 
@@ -88,8 +89,9 @@ body {
 /* Hw8 1) */
 
 .nav {
-    background: #ffffff; /* .second-color */
+    background:#ffffff; 
     margin-bottom: 5px;
+    
 }
 
 .nav a { 
@@ -104,9 +106,10 @@ body {
     display: flex;
     justify-content: space-around;
     text-align: center;
-    background: #ffffff; /* .second-color, it wasnt getting applied when used on nav by itself. */ 
+    background: #ffffff; 
     position:fixed; /*so it stays on top of the page when scrolling down */
     width: 100%; /*so it takes the whole allowed width, as making it fixed made it  no longer follow the previous setting */
+    border-bottom: 2px solid #272343; 
 }
 
 .nav-content {
@@ -148,7 +151,6 @@ header h1, header h2 {
 h2 {
     margin-top: 0; /*removed the padding on top as indicated in 3b. */
 }
-
 
 /* No longer in use, in order for the float to work in image as indicated by the hw7 assigment, this needed to be removed for it to take effect*/
 .profile-container { /* Profile picture styles, in order to get that round look */
@@ -237,5 +239,3 @@ main section {
 .education p, .volunteer p {  /* to reduce space between paragraphs, titles, only in education and volunteer sections */
   margin-block: 0.30em;
 }
-
-
