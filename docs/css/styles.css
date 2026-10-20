@@ -74,9 +74,8 @@ html {
 body {
     padding-top: 40px; /*this was added so the navigation bar wouldnt take part of the top of the first part */
     background: #ffffff; /* .second-color * changed from dark blue to white */
-    margin: 0 auto; /*3d change, margin: 0; */
+    margin: 0 auto;
     box-sizing: border-box; 
-    /*padding: 0 20px; changed it to main section so the color sections would go side to side of the body.*/
     font-family: "Inter", Verdana, Geneva, sans-serif;
 }
 
@@ -129,19 +128,17 @@ body {
 
 header {
     background: #bae8e8; /* .fourth-color */
-    /*display: flex; */
     align-items: center;
     padding: 0 40px;
 }
 
 header h1, header h2 {
-    margin: 0;  /* 4d */
+    margin: 0;  
 } 
 
 
 .content-wrap {
-    /*width: 950px;*/
-    max-width: 950px; /*adjusted as step 2d indicates, so that the content doesnt escape the border when the screen is smaller. */ 
+    max-width: 950px; 
     margin: 0 auto; 
     padding: 50px;
     overflow: hidden; /* 4f */
@@ -165,19 +162,12 @@ h2 {
 }
 
 .profile-image {
-    /*width: 300px;  */
     border-radius:50%;
-    /*float: left; /*4e */ 
-    /*margin-right: 30px; /* 4g */
-
-    /* width, float and margin commented out due indications in 6f */
 }
 
 .image-bg {
      background-image: url("../images/MachuPicchu.jpg"); /*Picture from project 1, i like it. For the background part, only the top shows, which is fine since the mountain tops are beutifull. */
      background-attachment: fixed;
-
-     /*id like to add i applied this to the BODY and not the section, since applying it to the section then doing a second div made the translucent layer not fix the whole zone due the fact that the area it was aplied to its the projects one, which is compartmentalized, making the translucent to not be applied to the top and sides. */
 } 
 
 .alpha-bg {
@@ -188,7 +178,7 @@ h2 {
 
 footer {
     padding: 20px 60px;
-    text-align: center; /* alliged as indicated in 3e */
+    text-align: center; 
     background:#272343; /* .first-color */
 }
 
