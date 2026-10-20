@@ -14,7 +14,7 @@
 
     <title>Christian Bartle | Resume</title>
 </head>
-<body class="second-color image-bg"> <!-- applied the second-color to the body element in the CSS, but I also kept the class as thats how I first implemented it. The difference is that if its on the body, it applies to all htmls that use the default body, while each body with a specific class gets that overwritten by the class one.-->
+<body class="second-color"> <!-- applied the second-color to the body element in the CSS, but I also kept the class as thats how I first implemented it. The difference is that if its on the body, it applies to all htmls that use the default body, while each body with a specific class gets that overwritten by the class one.-->
     <!-- // Intro -->
 
     <nav class ="navigationDisp">
@@ -131,42 +131,44 @@
             </div>
         </section>
 
-        <section class="projects alpha-bg"> <!-- two classes, projects, and a color class--> 
-            <div></div>
-            <div class="content-wrap">
+        <div class="image-bg">
+            <section class="projects alpha-bg"> <!-- two classes, projects, and a gradient class--> 
+                <!-- <div class= "alpha-bg>"    Applying this here and image-bg in the section didnt work, as the alpha bg gradient only gets applied to the main center area of the section, not the whole section. By applying the image bg before the section and the alpha-bg in the section it now properly shows, going from side to side and from section to section, rather than a square that covers the center part and not the padding/borders(leaving gaps) -->
+                <div class="content-wrap">
                     <h2 id="projects">Projects</h2>
-                    <div class="column-narrow">
-                        <h3>Automated Temperature & Water Level Control System</h3>
-                        <p>UTEC - University of Engineering and Technology - Lima, Peru.</p>
-                    </div>
-                    <div class="column-wide">
-                        <p>Mechatronics Engineering Interdisciplinary Project. Team of 5 students, carried out over the course of 1 semester.</p>
-                        <ul>
-                            <li>Designed and prototyped an automated water agitation system with temperature and level control.</li>
-                            <li>Implemented control logic using microcontrollers and sensor feedback.</li>
-                            <li>Integrated hardware and software components to achieve reliable autonomous operation.</li>
-                        </ul>
-                    </div>
+                        <div class="column-narrow">
+                            <h3>Automated Temperature & Water Level Control System</h3>
+                            <p>UTEC - University of Engineering and Technology - Lima, Peru.</p>
+                        </div>
+                        <div class="column-wide">
+                            <p>Mechatronics Engineering Interdisciplinary Project. Team of 5 students, carried out over the course of 1 semester.</p>
+                            <ul>
+                                <li>Designed and prototyped an automated water agitation system with temperature and level control.</li>
+                                <li>Implemented control logic using microcontrollers and sensor feedback.</li>
+                                <li>Integrated hardware and software components to achieve reliable autonomous operation.</li>
+                            </ul>
+                        </div>
 
-                    <div class="column-narrow">
-                        <h3>Quiz-hub</h3>
-                        <!-- <p>Comp 380 Senior Design Project. Take, create and/or manage quizzes, with an AI feature to help create quizzes.</p> -->
-                        <p>California State University Northridge (CSUN) - Northridge, CA.</p>
-                    </div>
-                    <div class="column-wide">
-                        <p>Computer Science Senior Design Project. Team of 6 students(2 backend, 4 frontend). Carried out over the course of 1 semester.</p>
-                        <p>Key Contributions:</p>
-                        <ul>
-                            <li>Worked in the backend development team.</li>
-                            <li>Implemented backend APIs and database schemas.</li>
-                            <li>Implemented Quiz search, a feature allowing users to find quizzes based on various criteria such as categories, popularity, and tags. Implemented with SWAGGER API.</li>
-                            <li>Implemented admin functionality and moderation tools, both in the backend as well as in the endpoints.</li>
-                            <li>Updated the database schemas to support new features as the project evolved.</li>
-                        </ul>
+                        <div class="column-narrow">
+                            <h3>Quiz-hub</h3>
+                            <!-- <p>Comp 380 Senior Design Project. Take, create and/or manage quizzes, with an AI feature to help create quizzes.</p> -->
+                            <p>California State University Northridge (CSUN) - Northridge, CA.</p>
+                        </div>
+                        <div class="column-wide">
+                            <p>Computer Science Senior Design Project. Team of 6 students(2 backend, 4 frontend). Carried out over the course of 1 semester.</p>
+                            <p>Key Contributions:</p>
+                            <ul>
+                                <li>Worked in the backend development team.</li>
+                                <li>Implemented backend APIs and database schemas.</li>
+                                <li>Implemented Quiz search, a feature allowing users to find quizzes based on various criteria such as categories, popularity, and tags. Implemented with SWAGGER API.</li>
+                                <li>Implemented admin functionality and moderation tools, both in the backend as well as in the endpoints.</li>
+                                <li>Updated the database schemas to support new features as the project evolved.</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
         <section class="volunteer fourth-color"> <!-- two classes, volunteer, and a color class-->
              <div class="content-wrap">
                 <h2 id="volunteer">Volunteer Work</h2>
