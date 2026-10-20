@@ -101,9 +101,6 @@ body {
     top: 0; 
     margin: 0 auto 5px; 
     padding: 10px 60px;
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
     background: #ffffff; 
     position:fixed; /*so it stays on top of the page when scrolling down */
     width: 100%; /*so it takes the whole allowed width, as making it fixed made it  no longer follow the previous setting */
