@@ -60,7 +60,6 @@
 }
 
 html {
-    background-image: url("../images/MachuPicchu.jpg"); /*Picture from project 1, i like it */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -152,20 +151,6 @@ h2 {
     margin-top: 0; /*removed the padding on top as indicated in 3b. */
 }
 
-/* No longer in use, in order for the float to work in image as indicated by the hw7 assigment, this needed to be removed for it to take effect*/
-.profile-container { /* Profile picture styles, in order to get that round look */
-    width: 250px;
-    height: 250px;
-    flex: 0 0 250px;
-    border-radius: 50%;
-    /*background: black;*/
-    object-fit: cover;
-    overflow: hidden; /*so the parts of the image outside of the desired circle dont show*/
-    display: flex;         /*Safely centers the image inside(optional) */
-    align-items: center;
-    justify-content: center;
-}
-
 .column-narrow { /*6d */
     width: 30%;
     float: left;
@@ -188,23 +173,18 @@ h2 {
     /* width, float and margin commented out due indications in 6f */
 }
 
-/* no longer in use
-.profile-text {
-    padding-right: 40px;
-    box-sizing: border-box;
-}
-*/
+.image-bg {
+     background-image: url("../images/MachuPicchu.jpg"); /*Picture from project 1, i like it. For the background part, only the top shows, which is fine since the mountain tops are beutifull. */
+     background-attachment: fixed;
 
-/*So my Name and the occupation have less spacing between them, as it was a lot at first once changing the fonts */
-/*
-.profile-text h1 {
-  margin: 0 0 0.15em;
+     /*id like to add i applied this to the BODY and not the section, since applying it to the section then doing a second div made the translucent layer not fix the whole zone due the fact that the area it was aplied to its the projects one, which is compartmentalized, making the translucent to not be applied to the top and sides. */
+} 
+
+.alpha-bg {
+    background: rgba(173, 216, 230, 0.666);
 }
 
-.profile-text h2 {
-  margin-top: 0;
-}
-removed these 2 from prior hw6 as it is adressed in step 4d  */
+
 
 footer {
     padding: 20px 60px;
